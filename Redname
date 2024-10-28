@@ -1,0 +1,17 @@
+main()
+Initialise le jeu, charge les étapes et le mot à deviner, et gère la boucle de jeu.
+
+chargerEtapes(nomFichier string) []string
+Lit un fichier et retourne les étapes du pendu sous forme de liste.
+
+choisirMot(nomFichier string) string
+choisit un mot aléatoire à deviner dans le fichier word.
+
+revelerLettresAleatoires(mot string) string
+Ecrit le mot avec les tiret en laissant apparaitre quelques lettres.
+
+revelerLettres(aDeviner, courant string, devinette rune) string
+Met à jour le mot affiché avec les lettres correctement devinées.
+
+contient(s []rune, r rune) bool
+Vérifie si une lettre a déjà été devinée.
